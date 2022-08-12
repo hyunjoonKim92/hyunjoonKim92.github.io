@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "정리가 재밌는 개발자 Blog"
 title_separator          : "-"
-subtitle                 : "version 1.0"
+subtitle                 : #"version 1.0"
 name                     : "김현준 (Kim Hyunjoon)"
 description              : "매일 기록하는 습관"
 url                      : "https://hyunjoonKim92.github.io"
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Kim Hyunjoon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "**기록이 자산!!**<br>매일 공부하고 있습니다.<br>소통을 좋아합니다."
   location         : "Republic of Korea"
   email            :
@@ -115,7 +115,7 @@ author:
       url: "mailto:hyunjoon1992@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.notion.so/Web-Developer-5c556b58ac624a6fb0fd3409cc7ad344"
+      url: "https://whip-hourglass-2e8.notion.site/Web-Developer-5c556b58ac624a6fb0fd3409cc7ad344"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hyunjoonKim92"
@@ -124,23 +124,8 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
       # url:
 
 
