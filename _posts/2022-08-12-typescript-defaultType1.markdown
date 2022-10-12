@@ -3,6 +3,8 @@ layout: single
 title: "[TypeScript] 기본 타입(1)"
 date: 2022-08-12
 description: TypeScript 기본 타입(1)
+sidebar:
+  nav: "docs"
 ---
 
 타입 스크립트에서 사용하는 타입 중 string, number, boolean, undefined, null 타입에 대해 알아보자.

@@ -3,6 +3,8 @@ layout: single
 title: "[TypeScript] 기본 타입(2)"
 date: 2022-08-13
 description: TypeScript 기본 타입(2)
+sidebar:
+  nav: "docs"
 ---
 
 타입 스크립트에서 사용하는 타입 중 void, never, unknown, any 타입에 대해 알아보자.
@@ -21,7 +23,7 @@ function warnUser(): void {
     console.log("This is my warning message.");
 }
 
-// 생략 시 자동으로 타입이 지정되나 
+// 생략 시 자동으로 타입이 지정되나
 // 보통 반환 값이 없을 때만 생략하고 반환 값이 있으면 타입을 명시해준다.
 function voidFunc() {
     console.log("This is my warning message.");
