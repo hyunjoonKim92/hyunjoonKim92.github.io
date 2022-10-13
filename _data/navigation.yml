@@ -25,9 +25,9 @@
   - title: Typescript
     children:
       - title: "[TypeScript] 기본 타입(1)"
-        url: typescript/typescript-defaultType1/
+        url: /typescript-defaultType1/
       - title: "[TypeScript] 기본 타입(2)"
-        url: typescript/typescript-defaultType2/
+        url: /typescript-defaultType2/
       # - title: "UI Text"
       #   url: /docs/ui-text/
       # - title: "Authors"
@@ -38,7 +38,7 @@
   - title: Vue
     children:
       - title: "Vue 란?"
-        url: vue/vue-basic/
+        url: /vue-basic/
     #   - title: "Working with Pages"
     #     url: /docs/pages/
     #   - title: "Working with Collections"
