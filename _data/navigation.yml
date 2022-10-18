@@ -54,3 +54,10 @@
     #     url: /docs/stylesheets/
     #   - title: "JavaScript"
     #     url: /docs/javascript/
+
+  - title: Algorithms
+    children:
+      - title: "[Algorithms] KnapSack Algorithms (1)"
+        url: /knapsack-1/
+    #   - title: "JavaScript"
+    #     url: /docs/javascript/
