@@ -57,7 +57,7 @@
 
   - title: Algorithms
     children:
+      - title: "[Algorithms] Stack Algorithms"
+        url: /stack/
       - title: "[Algorithms] KnapSack Algorithms (1)"
         url: /knapsack-1/
-    #   - title: "JavaScript"
-    #     url: /docs/javascript/
