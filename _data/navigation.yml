@@ -59,5 +59,7 @@
     children:
       - title: "[Algorithms] Stack Algorithms"
         url: /stack/
+      - title: "[Algorithms] Queue Algorithms"
+        url: /queue/
       - title: "[Algorithms] KnapSack Algorithms (1)"
         url: /knapsack-1/
