@@ -1,10 +1,9 @@
 ---
-layout: single
+layout: post
 title: "[TypeScript] 기본 타입(2)"
 date: 2022-08-13
 description: TypeScript 기본 타입(2)
-sidebar:
-  nav: "docs"
+categories: [TypeScript]
 ---
 
 타입 스크립트에서 사용하는 타입 중 void, never, unknown, any 타입에 대해 알아보자.

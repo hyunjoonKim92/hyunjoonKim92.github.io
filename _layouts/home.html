@@ -6,6 +6,20 @@ layout: default
   <h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
 
+<div class="site-category">
+	<ul class='cat1'>
+	  <li ><a href="/" class="ctext">Project</a>
+	  </li>
+	  <li><a href="/" class="ctext">Study</a>
+		<ul>
+			<li><a href="/category/Algorithms" class="ctext">Algorithms</a></li>
+      <li><a href="/category/TypeScript" class="ctext">TypeScript</a></li>
+      <li><a href="/category/Vue" class="ctext">Vue</a></li>
+		</ul>
+	  </li>
+	</ul>
+</div>
+
 {{ content }}
 
 {%- if site.posts.size > 0 -%}

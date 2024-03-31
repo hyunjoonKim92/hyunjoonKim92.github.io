@@ -1,5 +1,5 @@
 locale: "ko-KR"
-title: 정리가 재밌는 개발자 Blog
+title: 정리가 재밌는 개발자
 author: 김현준
 email: hyunjoon1992@naver.com
 url: "https://hyunjoonKim92.github.io"
@@ -28,9 +28,7 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    github: hyunjoonKim92
     #dribbble: jekyll
     #flickr:   jekyll
     #instagram: jekyll
@@ -60,3 +58,6 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+category_path: "category" # <- default value
+category_layout: "category.html" # <- default value
