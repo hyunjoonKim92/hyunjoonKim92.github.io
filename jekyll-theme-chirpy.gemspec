@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
