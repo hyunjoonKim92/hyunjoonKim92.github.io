@@ -124,6 +124,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (> 1.16)
+  jekyll
+  jekyll-seo-tag
+  kramdown-parser-gfm
   plainwhite!
   rake (~> 12.0)
 
