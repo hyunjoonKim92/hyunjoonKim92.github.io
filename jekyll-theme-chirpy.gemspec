@@ -1,3 +1,5 @@
+# frozen_string_literal: false
+
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
   spec.version       = "6.5.5"
