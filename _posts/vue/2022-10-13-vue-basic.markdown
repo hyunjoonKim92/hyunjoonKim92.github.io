@@ -1,0 +1,110 @@
+---
+layout: post
+title: "[Vue] Vue 란?"
+date: 2022-10-13
+description: Vue 란?
+sidebar:
+  nav: "docs"
+---
+
+## Vue 란?
+
+현재 Top 3 (Angular, React, Vue) 에 해당하는 Javascript Framework 로 MVVM (Mode-View-ViewModel) 패턴 기반 Framework
+<br>
+
+ - 데이터 바인딩과 화면 단위를 컴포넌트 형태로 제공하며 관련된 API 를 지원
+ - 양방향 데이터 바인딩 지원 (Component <-> Model)
+ - 컴포넌트간의 통신은 React 와 같이 단방향 데이터 흐름 (Parent -> Child) 사용
+ - Angular, React 등과 비교해서 상대적으로 가볍고 빠름
+ - 문법이 단순하고 간결해서 진입장벽이 낮고 쉽게 접근 가능
+ - Virtual DOM 지원
+ - Single File Compnent 지원
+ - View 에 최적화되어있어 JQuery 등을 이용한 DOM 조작이 필요없음
+ - 많은 모듈들의 지원과 한글화된 정보들이 많이 존재
+   - vuex: 중앙 집중식 상태관리 저장소
+   - vue-router: SPA 를 위한 라우터
+   - vue-resource: HTTP, Ajax, XMLHttpRequest 등
+   - vue-devtools: Vue 에 최적화된 개발자 도구
+
+<br>
+
+## MVVM 패턴이란?
+
+서버와 클라이언트의 UI 코드와 데이터를 분리하기 위한 기본적인 구조인 MVC (Model-View-Controller) 패턴에서 파생된 것으로, 쉽게 생각하면 서버와 연계되는 데이터 (Model) 와 UI 코드 및 UI 동작 (View) 간의 분리와 데이터 연계를 위한 중간 매개체로의 역할 (ViewModel) 을 담당하는 패턴을 의미
+
+<br>
+
+![제목](/assets/images/vue-mvvm.png)
+
+<br>
+
+## Vue Instance
+모든 Vue 어플리케이션들은 Vue 함수를 이용해서 인스턴스를 만드는 것부터 시작
+<br>
+아래의 예제는 아주 간단한 "Hello Vue" 를 출력하는 기본 샘플
+
+```vue
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Vue First Sample</title>
+    </head>
+    <body>
+      <div id="app">
+        {{ message }}
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script>
+        new Vue({
+          el: '#app',
+          data: {
+            message: 'Hello Vue.js!'
+          }
+        });
+    </script>
+  </body>
+</html>
+```
+- 옵션
+  - data: Vue 의 반응성 (Reactivity) 이 반영될 데이터 속성
+  - template: 화면에 표시할 요소 (HTML, CSS 등)
+  - el: Vue Instance 가 연계될 HTML Element
+  - methods: 화면의 동작과 이벤트를 처리하기 위한 메소드
+  - events (live cycle hooks): Vue 라이브사이클에 맞는 이벤트 훅
+  - watch: `data` 에 정의한 속성이 변경 (양방향 바인딩) 되었을 때 추가 동작을 수행할 수 있도록 정의하는 속성
+
+<br>
+
+## Vue Lifecycle
+
+<br>
+
+![제목](/assets/images/vue-lifecycle.png)
+
+<br>
+
+위의 그림을 단순한 진행 스텝 단위로 정리하면 아래와 같다.
+<br>
+
+- Vue Instance 생성
+- Events And Lifecycle 초기화
+  - **beforeCreate** 이벤트 훅 발생
+- Injections And Reactivity 초기화
+  - **created** 이벤트 훅 발생
+- Vue Instance 연결 (el option 지정에 따라 `vm.$mount(el)` 호출)
+- 템플릿 구성 (템플릿 미지정시 el 의 outerHTML 을 템플릿으로 처리)
+  - **beforeMount** 이벤트 훅 발생
+- `vm.$el` 변수 생성 및 el 엘리먼트를 Vue Instance 로 대체
+  - **mounted** 이벤트 훅 발생
+- 데이터 변경 발생 시 Virtual DOM 에 적용
+  - 데이터 변경 전 **beforeUpdate** 이벤트 훅 발생
+  - 데이터 변경 후 **updated** 이벤트 훅 발생
+- `vm.$destroy()` 메소드 호출되면 종료 진행
+  - **beforeDestroy** 이벤트 훅 발생
+  - watchers, child components, event listeners 종료
+  - **destroy** 이벤트 훅 발생
+
+<br>
+
+다음 장에서는 Vue Component 에 대해 자세히 다뤄보겠다.
