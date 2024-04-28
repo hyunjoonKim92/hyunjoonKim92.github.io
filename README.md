@@ -1,150 +1,62 @@
-# texture
+![preview Long Haul](/preview.jpg)
 
-A configurable jekyll theme for simply beautiful blogs.
+Long Haul is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
 
-**Demo**: [samarsault.com/texture](https://samarsault.com/texture)
+If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
 
-![texture theme preview](/screen1.png)
+#### [View Demo](http://brianmaierjr.com/long-haul)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
 
-## Installation on Github Pages
+## Features
 
-Add this line to your site's `_config.yml`:
-```yaml
-remote_theme: samarsault/texture
-```
+-   Minimal, Type Focused Design
+-   Built with SASS
+-   SVG Social Icons
+-   Responsive Nav Menu
+-   XML Feed for RSS Readers
+-   Contact Form via Formspree
+-   5 Post Loop with excerpt on Home Page
+-   Previous / Next Post Navigation
+-   Estimated Reading Time for posts
+-   Stylish Drop Cap on posts
+-   A Better Type Scale for all devices
+-   Comments powered by Disqus
+-   [Dark Mode support](https://github.com/brianmaierjr/long-haul/blob/master/preview-dark.png) via [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 
-**NOTE: If you are forking this repo, remove `base_url: /texture` in the `_config.yml` which is required to load the required website assets**
-## Installation
+## Setup
 
-Add this line to your Jekyll site's `Gemfile`:
+1. [Install Jekyll](http://jekyllrb.com)
+2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
+3. Clone it
+4. [Install Bundler](http://bundler.io/)
+5. Run `bundle install`
+6. Run Jekyll Serve and Watch command`bundle exec jekyll serve -w`
 
-```ruby
-gem "texture"
-```
+## Site Settings
 
-And add this line to your Jekyll site's `_config.yml`:
+The main settings can be found inside the `_config.yml` file:
 
-```yaml
-theme: texture
-```
+-   **title:** title of your site
+-   **description:** description of your site
+-   **url:** your url
+-   **paginate:** the amount of posts displayed on homepage
+-   **navigation:** these are the links in the main site navigation
+-   **social** diverse social media usernames (optional)
+-   **google_analytics** Google Analytics key (optional)
 
-And then execute:
+### Header Option
 
-    $ bundle
+If you'd like your header to be larger then you can use the option below in you `config.yml` to make it take up half of the vertical space on screens 800px wide and up. _Preview image below._
 
-Or install it yourself as:
+-   **header:** large
 
-    $ gem install texture
+![preview Long Haul](/preview-large.png)
 
-## Usage
+## To use on GitHub Pages
 
-The "texture" key in _config.yml is used to customize the theme data.
-```yaml
-texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-
-  social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman # format: locale/username
-```
-
-**Styling**
-
-Multiple header styles are supported using the "style" property under texture in `_config.yml`.
-
-```yaml
-texture:
-  style: [yellow|red|black|blue|green|purple]
-```
-
-For example, the blue style looks like this:
-
-![texture theme blue](/screen2.png)
-
-
-**Texture Picker**
-
-You can toggle the texture picker to show/experiment various textures on your site using the showPicker variable. Remember to make it `false` for production.
-
-```yaml
-texture:
-  showPicker: [false|true] # show the texture selector(development purposes)
-```
-
-**Comments (Disqus)**
-
-Comments on posts can be enabled by specifying your disqus_shortname under texture in `_config.yml`. For example,
-```yaml
-texture:
-  disqus_shortname: games
-```
-
-**Google Analytics**
-
-It can be enabled by specifying your analytics id under texture in `_config.yml`
-```yaml
-texture:
-  analytics_id: '< YOUR ID >'
-```
-
-**Excerpts**
-
-Excerpts can be enabled by adding the following line to your `_config.yml`
-```yaml
-show_excerpts: true
-```
-
-**Toggle Navbar**
-
-```yaml
-texture:
-  showNav: true
-```
-
-**Navigation**
-
-After setting `showNav` to true navigation can be built by adding the following to your `_config.yml`
-
-```yaml
-texture:
-  navigation:
-    - title: My Work
-      url: "/my-work"
-    - title: Resume
-      url: "/resume"
-```
-
-**Layouts**
-
-- Home
-- Page
-- Post
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/samarsault/texture. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `texture.gemspec` accordingly.
-
-## Donation
-If this project help you reduce time to develop, you can give me a cup of coffee :) 
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/thelehhman)
+To use latest Jekyll and Jekyll Sass Converter on GitHub Pages, <a href="https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/">you can now deploy to a GitHub Pages site using GitHub Actions.</a>
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## More Themes
-[plainwhite](https://github.com/samarsault/plainwhite-jekyll)
+This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.

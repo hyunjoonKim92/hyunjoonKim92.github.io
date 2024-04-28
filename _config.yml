@@ -1,43 +1,41 @@
-title: Texture Theme
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: /texture
+title: Long Haul
+description: Long Form Jekyll theme built with SASS
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+url: https://long-haul.netlify.app
+# Only necessary when hosting your site in a sub-directory. Project sites hosted on GitHub Pages are the common use-case of this variable.
+baseurl: # Ex: /project-page
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+# Header Option
+# header: large
+
 sass:
-  sass_dir: _sass
+    style: compressed
 
-permalink: /posts/:title/
-texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-  style: black
-  showNav: false
-  showPicker: true
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
 
-  # generate social links in footer
-  social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
-    rss: rss
- 
+navigation:
+    - title: Home
+      url: /index.html
+    - title: About
+      url: /about
+    - title: Contact
+      url: /contact
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+social:
+    github: brianmaierjr
+    twitter: brianmaierjr
+    facebook: brianmaierjr
+    email: brimaidesigns@gmail.com
+    linkedin: brianmaierjr
+    youtube: RickAstleyYT
+    tumblr: i-am-a-fish
 
-# Build settings
-# theme: texture
+google_analytics: "UA-58263416-1"
 
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+disqus:
+    shortname: brianmaierjr
