@@ -3,18 +3,16 @@ layout: post
 title: "[TypeScript] 기본 타입(2)"
 date: 2022-08-13
 description: TypeScript 기본 타입(2)
-sidebar:
-  nav: "docs"
 ---
 
 타입 스크립트에서 사용하는 타입 중 void, never, unknown, any 타입에 대해 알아보자.
 <br>
 
-## Void
+#### Void
 
 void 타입은 보통 함수에서 반환 값이 없을 때 반환 타입을 표현하기 위해 사용된다. 물론 일반 타입 변수로 선언할 수 있으나, 해당 변수에는 undefined 만 할당할 수 있기 때문에 사용하지 않는다.
 
-```
+```typescript
 let unusable: void = undefined;
 unusable = "record";
 
@@ -34,7 +32,7 @@ void 타입은 보통 함수에서만 사용하며 반환 값이 없다는 건 �
 
 <br>
 
-## Never
+#### Never
 
 never 타입은 모든 타입에 할당 가능한 하위 타입이나 본인 외에 다른 타입이 할당될 수 없다.
 
@@ -42,7 +40,7 @@ never 타입은 절대 발생할 수 없는 타입을 나타낸다.
 
 가장 흔한 예제로는 에러를 발생시킬 때 사용된다.
 
-```
+```typescript
 function fail(msg: string): never {
     throw new Error(msg);
 }
@@ -50,7 +48,7 @@ function fail(msg: string): never {
 
 <br>
 
-## Unknown / Any
+#### Unknown / Any
 
 두 타입을 같이 설명하는 이유는 두 타입 모두 타입을 지정하기 애매할 때 사용하기 때문이다.
 
@@ -58,7 +56,7 @@ Unknown 타입에 대해 알아보자.
 
 unknown 타입은 any 처럼 모든 타입을 넣어도 상관없다라기보다는 '이 변수는 어떤 타입이 될 지 모르니 네가 추론해줘.' 라는 의미와 같다.
 
-```
+```typescript
 let str: unknown = "anything";
 str = 2;
 str = [1, 2, 3];
@@ -71,7 +69,7 @@ Any 타입에 대해 알아보자.
 
 any 타입은 모든 타입을 할당받을 수 있는 타입이다.
 
-```
+```typescript
 let str: any = "anything";
 str = 2;
 str = [1, 2, 3];
@@ -81,7 +79,7 @@ str = [1, 2, 3];
 
 그리고 해당 타입의 메서드를 사용할 떄 '타입 표명 (type-assertion)' 을 사용해야하기 때문에 유의하여야 한다.
 
-```
+```typescript
 // any 타입 변수 할당
 let str: any = "anything";
 let test: string = str;
