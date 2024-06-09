@@ -8,7 +8,6 @@ description: tsconfig
 
 ```javascript
 // tsconfig.js
-
 {
     "compilerOptions": {
         "outDir": "./dist/", // compile 된 js 파일 저장 경로
